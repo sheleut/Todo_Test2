@@ -2,6 +2,7 @@ import pytest
 from unittest.mock import patch, MagicMock
 import gsheets_auth  # Dein Modul mit authenticate() und open_sheet()
 
+
 def test_authenticate_success():
     """
     Testet, dass die Authentifizierung über gspread.service_account korrekt funktioniert.

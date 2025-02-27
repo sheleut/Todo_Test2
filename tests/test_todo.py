@@ -1,6 +1,12 @@
 import pytest
-from src import todo
-from src import todolist
+import sys
+import os
+
+# Füge src zum Pfad hinzu
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
+from src.todolist import TodoList
+from src.todo import Todo
 
 
 @pytest.fixture
